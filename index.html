@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | AR2</title>
+    <title>Unity WebGL Player | AR3</title>
     <link rel="stylesheet" href="TemplateData/style.css">
 
     <style>
@@ -80,7 +80,7 @@
 
         });
     </script>
-    <script src="Build/Webtestmask.loader.js"></script>
+    <script src="Build/UIartest.loader.js"></script>
     <script>
         var container = document.querySelector("#unity-container");
         var canvas = document.querySelector("#unity-canvas");
@@ -92,12 +92,12 @@
             
             document.getElementById('startARDiv').style.display = 'none';
             createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/Webtestmask.data",
-                    frameworkUrl: "Build/Webtestmask.framework.js",
-                    codeUrl: "Build/Webtestmask.wasm",
+                    dataUrl: "Build/UIartest.data",
+                    frameworkUrl: "Build/UIartest.framework.js",
+                    codeUrl: "Build/UIartest.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "AR2",
+                    productName: "AR3",
                     productVersion: "0.1",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
